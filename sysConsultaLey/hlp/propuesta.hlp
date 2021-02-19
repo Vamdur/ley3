@@ -1,0 +1,145 @@
+FAVOR LEER hasta el FINAL.
+<br> <br>
+Esta Ayuda o Informacion
+ se Activa Automaticamente si no Consigue una Propuesta, es decir que le Permito al Usuario Leer antes de empezar escribir como loco, ya que muy pocos usuarios LEEN y luego andan perdidos.
+<br>Una vez el Usuario incluya la primera propuesta deja de aparecer automaticamente y la activa en el boton ?
+<br> <br>
+ Si no le van a poner ayuda en linea debes borrar el archivo
+ <b>sysConsultaLey/hlp/propuesta.hlp</b>
+<br>
+Ademas de Borrar o Comentar en el archivo <b>sysConsultaLey/vMisPropuestas.php</b>
+ la linea 55 <b> vfPanelAyuda({hlp:'sysConsultaLey/hlp/propuesta.hlp'</b>
+  porque sino sigue apareciendo <br> <br>
+
+Esta Validado de que no se puede hacer mas de una Propuesta por persona de un Aspecto+Numero+Numeral+Literal+Tipo
+<br>
+Ejemplo: <br>
+Aspecto: Articulo<br>
+Numero: 1<br>
+Numeral: 1<br>
+Literal: 1<br>
+Tipo: 1 - Modificar<br>
+
+<br> <br>
+ Los Nombres de los Archivos PDF a Descargar van en <b> sysConsultaLey/docs/ </b>, y deben tener nombres en minuscula según su item:<br>
+ 	convocatoria.pdf<br>
+ 	decreto.pdf<br>
+ 	documento_tecnico.pdf<br>
+ 	mapa_asignacion.pdf<br>
+	mapa_soporte.pdf<br>
+	resumen_ejecutivo.pdf<br>
+	<br>No invertar nombres de archivos, de lo contrario no se leeran.
+ <br>
+<br>
+Para modificar el encabezado debes hacerlo en el archivo <b>sysConsultaLey/conexion/conexion.php</b><br>
+ 		public static $vSysNombre       = "Plan de Ordenamiento y Reglamento...";  <br>
+
+<br> <br>
+Para modificar el encabezado donde dice Mis Propuestas (si asi lo desean)
+
+debes hacerlo en el archivo <b>sysConsultaLey/vMisPropuestas.php</b>
+ linea <b>vfnTitulo({titulo:"Mis Propuestas"</b>
+
+<br> <br>
+
+Ya la Persona puede modificar y borrar porque Construi un Logueo adicional, el cual me costo bastante tiempo porque se que luego van a pedir
+esto.
+
+<br> <br>
+La Ayuda no la construyo YO, debe hacerlo la gente que esta solicitando el Sistema, ya que elllos son los que manejan la Informacion
+<br> <br>
+Adicionalmente Coloque una Consulta de las Propuestas Realizadas por los Usuarios, donde se puede filtrar toda la informacion, TAMBIEN lo hice porque luego se que lo van a pedir.
+<br> <br>
+ Pueden ayudarse con este código para mejorar las ayudas (ojo sin los espacios, todo es HTML)
+ <br> <br>
+Salto de linea: < br><br>
+Letras Negrita: <b>< b> Negrita < /b></b><br><br>
+
+
+ICONOS: < i class='fa fa-NombreIcono'>< /i>  <br>
+
+<i class='fa fa-file-o'></i> : file-o<br>
+
+<i class='fa fa-pencil'></i> : pencil <br>
+<i class='fa fa-cut'></i> : cut  <br>
+<i class='fa fa-key'></i> : key <br>
+<i class='fa fa-eye'></i> : eye  <br>
+<i class='fa fa-user'></i> : user <br>
+<i class='fa fa-user-secret'></i> : user-secret  <br>
+<i class='fa fa-user-plus'></i> : user-plus  <br>
+<i class='fa fa-user-times'></i> : user-times  <br>
+<i class='fa fa-question'></i> : question  <br>
+
+<i class='fa fa-refresh'></i> : refresh <br>
+
+<i class='fa fa-download'></i> : download <br>
+<i class='fa fa-gear'></i> : gear <br>
+<i class='fa fa-gears'></i> : gears <br>
+<i class='fa fa-table'></i> : table <br>
+<i class='fa fa-list-alt'></i> : list-alt <br>
+<i class='fa fa-wrench'></i> : wrench <br>
+<i class='fa fa-thumbs-up'></i> : thumbs-up <br>
+<i class='fa fa-ban'></i> : ban <br>
+<i class='fa fa-floppy-o'></i> : floppy-o <br>
+<i class='fa fa-undo'></i> : undo <br>
+<i class='fa fa-print'></i> : print <br>
+<i class='fa fa-database'></i> : database <br>
+<i class='fa fa-check'></i> : check <br>
+<i class='fa fa-camera'></i> : camera <br>
+<i class='fa fa-envelope'></i> : envelope <br>
+<i class='fa fa-trash-o'></i> : trash-o <br>
+<i class='fa fa-file-photo-o'></i> : file-photo-o <br>
+<i class='fa fa-calendar'></i> : calendar <br>
+<i class='fa fa-venus-mars'></i> : venus-mars <br>
+<i class='fa fa-file-pdf-o'></i> : file-pdf-o <br>
+<i class='fa fa-file-excel-o'></i> :  file-excel-o<br>
+<i class='fa fa-file-text-o'></i> : file-text-o <br>
+<i class='fa fa-buysellads'></i> :  buysellads<br>
+<i class='fa fa-file-word-o'></i> : file-word-o <br>
+
+<i class='fa fa-navicon'></i> : navicon<br>
+<i class='fa fa-globe'></i> : globe <br>
+<i class='fa fa-firefox'></i> : firefox <br>
+<i class='fa fa-windows'></i> : windows<br>
+<i class='fa fa-linux'></i> : linux<br>
+
+<br>
+Si es mas Grande, incluir fa-2x <br>
+<i class='fa fa-2x fa-file-o'></i> : fa-2x fa-file-o  <br>
+
+ <br>
+ Rotar, incluir fa-rotate <br>
+<i class='fa fa-cut'></i> : fa-cut  <br>
+<i class='fa fa-cut fa-rotate-90'></i> : fa-cut fa-rotate-90 <br>
+<i class='fa fa-cut fa-rotate-180'></i> : fa-cut fa-rotate-180 <br>
+<i class='fa fa-cut fa-rotate-270'></i> : fa-cut fa-rotate-270 <br>
+
+ <br> <br>
+ Con Colores <br>
+<i class='fa fa-file-o text-success'></i> : fa-file-o text-success <br>
+<i class='fa fa-file-o text-danger'></i> : fa-file-o text-danger <br>
+<i class='fa fa-file-o text-warning'></i> : fa-file-o text-warning <br>
+<i class='fa fa-file-o text-info'></i> : fa-file-o text-info <br>
+<i class='fa fa-file-o text-primary'></i> : fa-file-o text-primary <br>
+
+<br>
+ Spin <br>
+<i class='fa fa-refresh fa-spin'></i> : fa-refresh fa-spin <br>
+ <br> <br>
+Alli estan todos  los que utilizo en mis Sistemas (creo que no deje ninguno por fuera), si Necesitas otros ir a la pagina de Font Awesome, solo se permiten iconos de la version 4.7
+
+  <br> <br>
+  UN ULTIMO EJEMPLO DE LO QUE SE PUEDE HACER:<br><br>
+<center>
+<i style='background-color:gray;font-size:1.5em'><b style='color:yellow;'>VEN</b><b style='color:blue;'>EZU</b><b style='color:red;'>ELA</b><br></i>
+</center>
+
+< center>
+< i style='background-color:gray;font-size:1.5em'>
+< b style='color:yellow;'>VEN< /b>
+< b style='color:blue;'>EZU< /b>
+< b style='color:red;'>ELA< /b>
+< /i>
+< /center>
+<br><br>  <br><br>
+  Me gusta hacer mi Trabajo y hacerlo lo mejor posible ... <br>(y Disculpen los acentos y errores, si los hay.... Ya tenia sueño)<br>
